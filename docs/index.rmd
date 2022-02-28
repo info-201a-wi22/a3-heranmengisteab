@@ -1,59 +1,74 @@
+---
+title: "Incarcerations rates throughout the U.S."
+author: "Heran Mengisteab"
+date: "2/25/2022"
+output: html_document
+---
+
+
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
-setwd("~/INFO 201/a3-heranmengisteab/source")
-source("analysis.R")
+```
+
+
+```{r source, include = FALSE, echo = FALSE}
+source("../source/analysis.R")
+
+
 ```
 
 # Introduction
-This report will be examining the incarceration rates for many demogrpahics in the US. This report looks into the incarceration rates in every different race, gender, age, state, county, year, region and so on. The dataset spans from 1970-2018. Well looking through the dataset and the variables givens we can see that there black and brown people are targeted by the prison system. I decided to focus on the general incarcerations rates throughout the US just to show the difference in inmates throughout the years. 
+This report will be examining the incarceration rates for many demogrpahics in the US. This report looks into the incarceration rates in every different race, gender, age, state, county, year, region and so on. The dataset spans from 1970-2018. Well looking through the dataset and the variables givens we can see that there black and brown people are targeted by the prison system. I decided to focus on the general incarcerations rates throughout the US just to show the difference in inmates throughout the years.
 
 ## Summary Information
 
 ### Variable 1: State with the highest incarceration rate
-Which state contains the highest incarceration rate? 
-```{r}
+Which state contains the highest incarceration rate?
+```{r, echo = FALSE}
 highest_incarceration_state
 ```
 ### Variable 2: Adult vs juvenile incarceration rate  
-Who is incarceration more adults or juvenile? 
-```{r}
+Who is incarceration more adults or juvenile?
+```{r, echo = FALSE}
 highest_jail_pop
 ```
 
-### Variable 3: County with the highest jail population 
-Which county in the US has the highest jail population? 
-```{r}
+### Variable 3: County with the highest jail population
+Which county in the US has the highest jail population?
+```{r, echo = FALSE}
 highest_county_pop
 ```
 
 ### Variable 4: State with the lowest incarceration rates in 2012
 
-In 2012 which had state the lowest incarceration rates? 
-```{r}
-state_low_jail_pop 
+In 2012 which had state the lowest incarceration rates?
+```{r, echo = FALSE}
+state_low_jail_pop
 ```
 
 ### Variable 5: Total incarceration population in Florida
-Which state has the highest proportion of black people to the entire black population? (when taking the average of all counties every year)
-```{r}
-total_incarceration_FL 
+what is the total jail population in Florida for each race and year?
+```{r, echo = FALSE}
+total_incarceration_FL
 ```
 
 #trends over time: Native jail population from 1970-2018
-In this chart it displays the trend of incarcerations of native american in the US. This stretches from 1970 to 2018. It clearly shows as the years goes on the more people are getting incarcerated. This being due to the societies advance the rates of crime goes up With it. 
-```{r}
-ggplotly(native_jail_pop_time)
+In this chart it displays the trend of incarcerations of native american in the US. This stretches from 1970 to 2018. It clearly shows as the years goes on the more people are getting incarcerated. This being due to the societies advance the rates of crime goes up with it. 
+```{r, echo=FALSE}
+native_jail_pop_time
+
 ```
-#variable comparison chart: 
+
+#variable comparison chart:
 This chart has the population on the y axis, and the year on the x axis. There are two population types that are being view in this comparison. As you can see this chart is display the incarcerations rate for adult females and adult males in US. This focuses on 2000. When analyzing this visualization we can also see that man are incarcerated more than women and this can be for a whole number of reasons.
-```{r}
-ggplotly(female_vs_male)
+```{r, echo = FALSE}
+female_vs_male
 
 ```
 
-# Map 
-This map displays the amount of Asian Americans and Pacific Islanders People Incarcerated by state. This map takes place in the year 2010. On the scale the dark blue means less while the light blue means more. Since we are looking at aapi specifically, we can see that California had that highest aapi incarceration rate. Aapi are often known for not having a high incarceration rate, so this map is quite accurate. 
+# Map
+This map displays the amount of Asian Americans and Pacific Islanders People Incarcerated by state. This map takes place in the year 2010. On the scale the dark blue means less while the light blue means more. Since we are looking at aapi specifically, we can see that California had that highest aapi incarceration rate. Aapi are often known for not having a high incarceration rate, so this map is quite accurate.
 
-```{r}
+```{r, echo = FALSE}
 
-map <- display_map(us_map)
+us_map
