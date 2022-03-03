@@ -8,18 +8,6 @@ output: html_document
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
-=======
-title: "Incarcerations rates throughout the U.S."
-author: "Heran Mengisteab"
-date: "2/25/2022"
-output: html_document
----
-
-
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = FALSE)
->>>>>>> 7e292dc9e0b584832ad38021c4ae5a15973ebd1e
-```
 
 
 ```{r source, include = FALSE, echo = FALSE}
