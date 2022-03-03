@@ -1,4 +1,5 @@
 ---
+<<<<<<< HEAD
 title: "Incarceration rates in the US"
 author: "Heran Mengisteab"
 date: "3/2/2022"
@@ -7,15 +8,35 @@ output: html_document
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
+=======
+title: "Incarcerations rates throughout the U.S."
+author: "Heran Mengisteab"
+date: "2/25/2022"
+output: html_document
+---
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+>>>>>>> 7e292dc9e0b584832ad38021c4ae5a15973ebd1e
 ```
 
 
 ```{r source, include = FALSE, echo = FALSE}
 source("../source/analysis.R")
+<<<<<<< HEAD
 ```
 
 # Introduction
 This report will be examining the incarceration rates for many demographics in the US. This report looks into the incarceration rates in every different race, gender, age, state, county, year, region and so on. The dataset spans from 1970-2018. Well looking through the dataset and the variables givens we can see that there black and brown people are targeted by the prison system. I decided to focus on the general incarcerations rates throughout the US just to show the difference in inmates throughout the years.
+=======
+
+
+```
+
+# Introduction
+This report will be examining the incarceration rates for many demogrpahics in the US. This report looks into the incarceration rates in every different race, gender, age, state, county, year, region and so on. The dataset spans from 1970-2018. Well looking through the dataset and the variables givens we can see that there black and brown people are targeted by the prison system. I decided to focus on the general incarcerations rates throughout the US just to show the difference in inmates throughout the years.
+>>>>>>> 7e292dc9e0b584832ad38021c4ae5a15973ebd1e
 
 ## Summary Information
 
