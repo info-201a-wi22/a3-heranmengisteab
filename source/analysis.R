@@ -79,7 +79,7 @@ na_incarceration$race <- na_incarceration$race %>%
   factor(levels = c("native_jail_pop"))
 
 
-native_jail_pop_time <- ggplot(CA_incarceration_file)+
+native_jail_pop_time <- ggplot(na_incarceration)+
   geom_col(mapping = aes(x = year, y = population, fill = race), position = "dodge") +
   scale_alpha_continuous(5, 10) +
   labs(title = "Native Jail Population Over Time", 
@@ -93,7 +93,8 @@ female_vs_male <- incarceration_trends %>%
   group_by(state) %>%
   filter(year == 2000) %>% 
   summarize(female_adult_jail_pop = mean(female_adult_jail_pop, na.rm = T),
-            male_adult_jail_pop = mean(male_adult_jail_pop, na.rm = T))
+            male_adult_jail_pop = mean(male_adult_jail_pop, na.rm = T)) %>% 
+  na.omit()
 
 adult_fem_v_mal <- ggplot(female_vs_male, aes(x = female_adult_jail_pop,
                                                       y = male_adult_jail_pop)) +
