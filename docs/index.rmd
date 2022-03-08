@@ -7,7 +7,6 @@ output: html_document
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
-```
 
 
 ```{r source, include = FALSE, echo = FALSE}
@@ -15,7 +14,8 @@ source("../source/analysis.R")
 ```
 
 # Introduction
-This report will be examining the incarceration rates for many demographics in the US. It goes on to look into the incarceration rates in every different race, gender, age, state, county, year, region and so on. The dataset spans from 1970-2018. While looking through the dataset and the variables givens we can see that there black and brown people are targeted by the prison system. And how males have a higher incarceration rate than females and what was the total incarceration rate of a certain demographic. I decided to focus on the general incarcerations rates throughout the US just to show the difference in inmates throughout the years. This allows us to get a greater scope on our prison industrial system in the US. 
+This report will be examining the incarceration rates for many demographics in the US. It goes on to look into the incarceration rates in every different race, gender, age, state, county, year, region and so on. The dataset spans from 1970-2018. While looking through the dataset and the variables givens we can see that there black and brown people are targeted by the prison system. And how males have a higher incarceration rate than females and what was the total incarceration rate of a certain demographic. I decided to focus on the general incarcerations rates throughout the US just to show the difference in inmates throughout the years. This allows us to get a greater scope on our prison industrial system in the US.
+
 
 # Summary Information
 
@@ -50,7 +50,7 @@ total_incarceration_FL
 ```
 
 # Trends over time: Native jail population from 1970-2018
-In this chart it displays the trend of incarcerations of native american in the US. This stretches from 1970 to 2018. It clearly shows as the years goes on the more people are getting incarcerated. This being due to the societies advance the rates of crime goes up with it. 
+In this chart it displays the trend of incarcerations of native american in the US. This stretches from 1970 to 2018. It clearly shows as the years goes on the more people are getting incarcerated. This being due to the societies advance the rates of crime goes up with it.
 ```{r, echo=FALSE}
 native_jail_pop_time
 
